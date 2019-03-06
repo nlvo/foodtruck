@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Foodtruck</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav class="nav nav--desktop">
+                <ul>
+                    <li>
+                        <a href="#" data-related="home" class="logo">
+                            <img src="assets/icons/sunset_logo.svg" alt="sunset logo">
+                        </a>
+                    </li>
+                    <li><a href="#" data-related="home" class="page-link active">Home</a></li>
+                    <li><a href="#" data-related="menu" class="page-link">Menu</a></li>
+                    <li><a href="#" data-related="over-ons" class="page-link">Over ons</a></li>
+                    <li><a href="#" data-related="contact" class="page-link">Contact</a></li>
+                </ul>
+            </nav>
+            <nav class="nav nav--mobile">
+                <ul>
+                    <li>
+                        <a href="#" data-related="home" class="page-link active">
+                            <span class="icon ion-ios-home"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-related="over-ons" class="page-link">
+                            <span class="icon ion-ios-people"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-related="menu" class="page-link">
+                            <span class="icon ion-ios-list"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-related="contact" class="page-link">
+                            <span class="icon ion-ios-paperplane"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-related="credits" class="page-link">
+                            <span class="icon ion-ios-information"></span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            
+            <!-- Flashscreen -->
+            
+            <div class="flashscreen">
+                <div class="flashscreen__vertical">
+                    <img src="assets/icons/foodtruck.svg" alt="">
+                    <img class="logo_img" src="assets/icons/sunset_logo.svg" alt="sunset logo">
+                </div>
+            </div>
+            
+            <!-- Homepage -->
+            
+            <div id="home" class="page">
+                <article class="row">
+                    <header>
+                        <h1>Home</h1>
+                        <h2>Aangenaam!</h2>
+                    </header>
+                    <section class="row__col row__col--sm-12">
+                        <div class="row">
+                            <div class="row__col row__col--sm-12 row__col--md-6">
+                                <h3>Wij maken van street food een groot culinair spektakel!</h3>
+                                <p>Onze foodtruck is een street food concept met een verse visie op eten. Wij zijn food fanaten en bieden een mix van waanzinnig lekkere specialiteiten en service van kop tot staart.</p>
+                            </div>
+                            <div class="row__col row__col--sm-12 row__col--md-6">
+                                <video controls="" poster="assets/img/lemonade.jpg">
+                                    <source src="assets/video/lemonade.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="row__col row__col--sm-12">
+                        <h3>Blijf op de hoogte van waar we staan en meld je aan voor onze nieuwsbrief.</h3>
+                        <div id="newsletter-thanks" class="popup-container">
+                            <div class="popup">
+                                <div class="popup__content">
+                                    <img src="assets/icons/foodtruck.svg" alt="">
+                                    <h1>Dankuwel</h1>
+                                    <p>U bent succesvol aangemeld voor ons nieuwsbrief!</p>
+                                    <button class="btn btn--close">sluiten</button>
+                                </div>
+                            </div>
+                        </div>
+                        <form>
+                            <input type="text" placeholder="e-mail">
+                            <a href="" class="btn btn--email">Aanmelden</a>
+                        </form>
+                    </section>
+                </article>
+            </div>
+            
+            <!-- Foodtruck menu page -->
+
+            <div id="menu" class="page page--hidden">
+                <article class="row">
+                    <header class="row__col row__col--sm-12">
+                        <h1>Menu</h1>
+                        <p>Ontdek hier enkele van onze waanzinnige specialiteiten. Geniet ervan!</p>
+                    </header>
+                    <div class="row__col row__col--sm-12">
+                        <ul class="row">
+                            <li class="row__col row__col--sm-12 row__col--md-6">
+                                <a href="" data-related="limonade" class="menu-item page-link">
+                                    <div class="menu-item__img">
+                                        <img src="assets/icons/food/kimchi.svg" alt="">
+                                    </div>
+                                    <h2>Kimchi</h2>
+                                </a>
+                            </li>
+                            <li class="row__col row__col--sm-12 row__col--md-6">
+                                <a href="" data-related="limonade" class="menu-item page-link">
+                                    <div class="menu-item__img">
+                                        <img src="assets/icons/food/sweet_sour_pork.svg" alt="">
+                                    </div>
+                                    <h2>Zoet zure varkenslappen</h2>
+                                </a>
+                            </li>
+                            <li class="row__col row__col--sm-12 row__col--md-6">
+                                <a href="" data-related="limonade" class="menu-item page-link">
+                                    <div class="menu-item__img">
+                                        <img src="assets/icons/food/sweet_sour_chicken.svg" alt="">
+                                    </div>
+                                    <h2>Zoet zure kip</h2>
+                                </a>
+                            </li>
+                            <li class="row__col row__col--sm-12 row__col--md-6">
+                                <a href="" data-related="limonade" class="menu-item page-link">
+                                    <div class="menu-item__img">
+                                        <img src="assets/icons/food/pickle_herring.svg" alt="">
+                                    </div>
+                                    <h2>Zure bommen</h2>
+                                </a>
+                            </li>
+                            <li class="row__col row__col--sm-12 row__col--md-6">
+                                <a href="" data-related="limonade" class="menu-item page-link">
+                                    <div class="menu-item__img">
+                                        <img src="assets/icons/food/candied_fruit.svg" alt="">
+                                    </div>
+                                    <h2>Gekonfijit fruit</h2>
+                                </a>
+                            </li>
+                            <li class="row__col row__col--sm-12 row__col--md-6">
+                                <a href="" data-related="limonade" class="menu-item page-link">
+                                    <div class="menu-item__img">
+                                        <img src="assets/icons/food/zure_zult.svg" alt="">
+                                    </div>
+                                    <h2>Zure zult</h2>
+                                </a>
+                            </li>
+                            <li class="row__col row__col--sm-12 row__col--md-6">
+                                <a href="" data-related="limonade" class="menu-item page-link">
+                                    <div class="menu-item__img">
+                                        <img src="assets/icons/drinks/beer.svg" alt="">
+                                    </div>
+                                    <h2>Gember bier</h2>
+                                </a>
+                            </li>
+                            <li class="row__col row__col--sm-12 row__col--md-6">
+                                <a href="" data-related="limonade" class="menu-item page-link">
+                                    <div class="menu-item__img">
+                                        <img src="assets/icons/drinks/white_wine.svg" alt="">
+                                    </div>
+                                    <h2>Witte wijn</h2>
+                                </a>
+                            </li>
+                            <li class="row__col row__col--sm-12 row__col--md-6">
+                                <a href="" data-related="limonade" class="menu-item page-link">
+                                    <div class="menu-item__img">
+                                        <img src="assets/icons/drinks/lemonade.svg" alt="">
+                                    </div>
+                                    <h2>Citroen limonade</h2>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Foodtruck menu item detailpage -->
+            
+            <div id="limonade" class="page page--hidden">
+                <article class="row">
+                    <header class="row__col row__col--sm-12">
+                        <a href="#" data-related="menu" class="page-link">
+                            <span class="ion-ios-arrow-back"></span>
+                        </a>
+                        <h1>Citroen limonade</h1>
+                        <img src="assets/icons/drinks/lemonade.svg" alt="">
+                    </header>
+                    <section class="ingredients row__col row__col--sm-12">
+                        <h2>Ingrediënten</h2>
+                        <ul class="row">
+                            <li class="row__col row__col--sm-3">
+                                <img src="assets/icons/ingredients/water.svg" alt="">
+                                <p>Water</p>
+                            </li>
+                            <li class="row__col row__col--sm-3">
+                                <img src="assets/icons/ingredients/lemon.svg" alt="">
+                                <p>Citroen</p>
+                            </li>
+                            <li class="row__col row__col--sm-3">
+                                <img src="assets/icons/ingredients/ice_cubes.svg" alt="">
+                                <p>Ijsblokjes</p>
+                            </li>
+                            <li class="row__col row__col--sm-3">
+                                <img src="assets/icons/ingredients/sugar.svg" alt="">
+                                <p>Suiker</p>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="row__col row__col--sm-12">
+                        <div class="row">
+                            <div class="row__col row__col--sm-12 row__col--md-6">
+                                <h2>Stappen</h2>
+                                <ol>
+                                    <li>Add the sugar and water to a saucepan and heat over medium heat until the sugar dissolves.</li>
+                                    <li>Remove the saucepan from the heat and set to the side for the simple syrup to cool.</li>
+                                    <li>Juice 6-8 lemons to get at least one cup of lemon juice.</li>
+                                    <li>Pour the lemon juice to a pitcher with 1 cup of the simple syrup</li>
+                                    <li>Add a few handfuls of ice and fill with 4 cups of water.</li>
+                                    <li>Taste the lemonade and adjust with water or simple syrup to taste.</li>
+                                    <li>Serve with freshly cut lemon slices and mint leaves.</li>
+                                </ol>
+                            </div>
+                            <div class="row__col row__col--sm-12 row__col--md-6">
+                                <video controls="" poster="assets/img/lemonade.jpg">
+                                    <source src="assets/video/lemonade.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+            </div>
+            
+            <!-- About us page -->
+            
+            <div id="over-ons" class="page page--hidden">
+                <article class="row">
+                    <header>
+                        <h1>Over ons</h1>
+                        <img class="foodtruck" src="assets/icons/foodtruck.svg" alt="">
+                    </header>
+                    <section class="row__col row__col--sm-12">
+                        <h2>Goed eten is één van de belangrijkste dingen in het leven. Sweet and sour wil bijdragen aan het veranderen van ons huidige voedselsysteem.</h2>
+                        <p>Wij geloven dat als wij allemaal weer zelf logische keuzes gaan maken, door bijvoorbeeld minder grote hoeveelheden te eten, wij deze wereld in rap tempo positief veranderen!</p>
+                        <p>Voor ons heeft eten te maken met veel plezier hebben en nieuwsgierig zijn. Ons plezier zul je dan ook zeker proeven!</p>
+                        <a href="#" data-related="contact" class="btn page-link">Neem contact op</a>
+                    </section>
+                </article>
+            </div>
+            
+            <!-- Contactpage -->
+            
+            <div id="contact" class="page page--hidden">
+                <article class="row">
+                    <header>
+                        <h1>Contact</h1>
+                        <h2>Leuk je te ontmoeten!</h2>
+                    </header>
+                    <section class="row__col row__col--sm-12 row__col--md-6">
+                        <h3>Waar staan we nu?</h3>
+                        <p>Rollende keukens Amsterdam, 2-3 november</p>
+                        <h3>Binnenkort zijn we hier te vinden:</h3>
+                        <p>Food fest Almere, 12-14 december</p>
+                    </section>
+                    <section class="row__col row__col--sm-12 row__col--md-6">
+                        <h3>Maak contact met ons</h3>
+                        <p>Stuur ons een e-mail, neem telefonisch contact op of kom gezellig langs!</p>
+                        <p>+31 20 552 6723</p>
+                        <a href="#">info@naamfoodtruck.nl</a>
+                    </section>
+                    <section class="contact__form row__col row__col--sm-12 row__col--md-6">
+                        <h3>Formulier</h3>
+                        <div id="email-thanks" class="popup-container">
+                            <div class="popup">
+                                <div class="popup__content">
+                                    <img src="assets/icons/foodtruck.svg" alt="">
+                                    <h1>Dankuwel</h1>
+                                    <p>Uw bericht is verzonden. We nemen zo snel mogelijk contact met u op.</p>
+                                    <button class="btn btn--close">Sluiten</button>
+                                </div>
+                            </div>
+                        </div>
+                        <form>
+                            <fieldset>
+                                <label for="name">Naam</label>
+                                <input id="name" type="text" placeholder="uw naam">
+                            </fieldset>
+                            <fieldset>
+                                <label for="e-mail">E-mail</label>
+                                <input id="e-mail" type="email" placeholder="uw_email@adres.nl">
+                            </fieldset>
+                            <fieldset>
+                                <label for="message">Bericht</label>
+                                <textarea id="message" cols="30" rows="10" placeholder="uw bericht"></textarea>
+                            </fieldset>
+                            <button class="btn btn--form">verzenden</button>
+                        </form>
+                    </section>
+                </article>
+            </div>
+
+            <!-- Credits page -->
+
+            <div id="credits" class="page page--hidden">
+                <article>
+                    <header>
+                        <h1>Credits</h1>
+                        <p>De eigenaars/eigenaressen</p>
+                    </header>
+                    <section class="row">
+                        <div class="row__col row__col--sm-12">
+                            <ul>
+                                <li>
+                                    <h2>Limonade video</h2>
+                                    <a href="https://www.youtube.com/watch?v=2eXQctAF6gI" target="_blank">
+                                        Limonade Video
+                                    </a>
+                                </li>
+                                <li>
+                                    <h2>Iconen navigatie onderin</h2>
+                                    <a href="https://code.ionicframework.com/" target="_blank">
+                                        Ionicons
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </article>
+            </div>
+
+        </main>
+        
+        <footer>
+            <div class="row">
+                <p class="row__col row__col--sm-12">&copy; Copyright 2017 | Webdesign: Lien Vo and Development.
+                    <a href="#" data-related="credits" class="page-link">Credits</a>
+                </p>
+            </div>
+        </footer>
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        
+        <script src="js/main.js"></script>
+    </div>
+</body>
+
+</html>

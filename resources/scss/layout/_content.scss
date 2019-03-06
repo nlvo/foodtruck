@@ -1,0 +1,107 @@
+#menu {
+    li {
+        &:first-of-type {
+            .menu-item {
+                border-top-left-radius: 3px;
+                border-top-right-radius: 3px;
+            }
+        }
+    }
+    .menu-item {
+        background-color: $cloud;
+        border: 1px solid $iron;
+        border-radius: 3px;
+        color: $color-text-default;
+        margin: 10px;
+        padding: 20px;
+        text-decoration: none;
+
+        display: flex;
+        flex-wrap: wrap;
+        .menu-item__img {
+            flex-basis: 20%;
+            height: 20%;
+            max-width: 20%;
+        }
+        h2 {
+            font-size: 12px;
+            flex-basis: 80%;
+            max-width: 80%;
+            display: flex;
+            flex-direction: column;
+            padding: 0 20px;
+        }
+    }
+}
+
+#limonade {
+    .ingredients {
+        text-align: center;
+    }
+    .row__col--sm-3 {
+        justify-content: center;
+        img {
+            height: 35px;
+        }
+    }
+    section {
+        margin: 15px 0;
+        .row__col {
+            margin: 15px 0;
+        }
+    }
+    ol {
+        margin-left: 20px;
+        li {
+            list-style-type: decimal;
+        }
+    }
+}
+
+#over-ons {
+    .foodtruck {
+        width: 35%;
+    }
+}
+
+#contact {
+    section {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    h2 {
+        color: $peach;
+    }
+    h3 {
+        padding: 0;
+    }
+    a {
+        padding: 10px 0;
+    }
+    .contact__form {
+        border-top: 1px solid $iron;
+        form {
+            input,
+            textarea {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #menu {
+        ul {
+            margin: 0 auto;
+            width: 80%;
+        }
+        .menu-item {
+            .menu-item__img {
+                height: 50px;
+                img {
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

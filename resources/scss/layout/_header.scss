@@ -1,0 +1,89 @@
+// Global header styling
+.page {
+    header {
+        background-image: url('../assets/img/bg.svg');
+        height: 150px;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+// Custom header styling
+#home {
+    header{
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        h2 {
+            color: $peach;
+        }
+        img {
+            margin: 0 auto;
+            width: 120px;
+        }
+    }
+}
+
+#menu {
+    header {
+        background-image: none;
+        height: auto;
+        h1 {
+            color: $steel;
+        }
+        p {
+            color: $peach;
+        }
+    }
+}
+
+#limonade {
+    header {
+        position: relative;
+        a {
+            color: $steel;
+            height: 80px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 80px;
+            span {
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                font-size: 20px;
+            }
+        }
+        h1 {
+            display: inline-block;
+        }
+        img {
+            position: absolute;
+            bottom: -25px;
+            right: 25px;
+            width: 80px;
+        }
+    }
+}
+
+// Responsive headers
+@media screen and (min-width: 1280px) {
+    #over-ons {
+        header {
+        	height: 300px;
+        }
+    }
+    #limonade {
+        header {
+            height: 300px;
+            img {
+                display: block;
+                margin: 0 auto;
+                padding: 15px;
+                position: relative;
+                width: 15%;
+            }
+        }
+    }
+}

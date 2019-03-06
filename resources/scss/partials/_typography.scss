@@ -1,0 +1,86 @@
+@font-face {
+    font-family: Hind;
+    src: url(../assets/fonts/Hind-Regular.ttf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../assets/fonts/Montserrat-Bold.otf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../assets/fonts/Montserrat-Regular.otf);
+}
+
+body {
+    font-family: 'Hind';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat';
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 14px;
+}
+
+h3 {
+    font-size: 14px;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+p {
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+a {
+    color: $color-link-default;
+}
+
+@media screen and (min-width: 1280px) {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Montserrat';
+        padding: 20px 0;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+}

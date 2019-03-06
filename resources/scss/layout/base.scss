@@ -1,0 +1,106 @@
+@import 'header';
+@import 'nav';
+@import 'content';
+@import 'footer';
+
+form {
+    padding: 20px 0;
+    fieldset {
+        padding: 5px 0px;
+    }
+    label {
+        display: block;
+        font-weight: bold;
+        padding: 5px 0px;
+    }
+    input,
+    textarea {
+        border: 1px solid $iron;
+        padding: 10px;
+    }
+}
+
+.flashscreen {
+    background-color: $cloud;
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 100vh;
+    width: 100%;
+    z-index: 2;
+}
+
+.popup-container {
+    display: none;
+    .popup {
+        position: absolute;
+
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        height: 100vh;
+        width: 100%;
+        z-index: 2;
+        .popup__content {
+            background-color: $cloud;
+            box-shadow: 0 0 15px rgba(0, 0, 0, .15);
+            padding: 15px;
+            text-align: center;
+            width: 100%;
+            img {
+                width: 40%;
+            }
+        }
+    }
+}
+
+.page {
+    height: 100%;
+    position: relative;
+    right: -500px;
+    width: 100%;
+    animation: slide 0.5s forwards;
+    z-index: 1;
+}
+
+// hide all divs with the class page hidden
+// with js/jquery toggle
+.page--hidden {
+    display: none;
+}
+
+@media (min-width: 576px) {
+    .popup-container {
+        .popup {
+            .popup__content {
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .page {
+        right: 0;
+        animation: none;
+        .foodtruck {
+            position: relative;
+            left: -500px;
+            animation: slideLeft 1s forwards;
+            animation-delay: 0.2s;
+        }
+    }
+}

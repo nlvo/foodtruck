@@ -1,0 +1,13 @@
+// https://stackoverflow.com/questions/16989585/css-3-slide-in-from-left-transition
+
+@keyframes slide {
+    100% {
+        right: 0;
+    }
+}
+
+@keyframes slideLeft {
+    100% {
+        left: 0;
+    }
+}

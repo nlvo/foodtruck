@@ -1,0 +1,87 @@
+.nav {
+    background: $cloud;
+    width: 100%;
+    ul {
+        display: flex;
+        justify-content: space-around;
+        li a {
+            color: $color-text-default;
+            padding: 10px 15px;
+        }
+    }
+}
+
+.nav--mobile {
+    bottom: 0; 
+    box-shadow: 0 0 15px rgba(0,0,0,.05);
+    left: 0;
+    position: fixed;
+    z-index: 2;
+    ul {
+        padding: 0;
+        li {
+            a {
+                font-size: 23px;
+                &.active {
+                    color: $color-link-default;
+                }
+            }
+        }
+    }
+}
+
+.nav--desktop {
+    display: none;
+}
+
+@media (min-width: 1280px) {
+    .nav--desktop {
+        display: block;
+        ul {
+            li {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                a {
+                    &:after {
+                        background-color: $cloud;
+                        content: '';
+                        display: block;
+                        height: 3px;
+                        width: 0;
+                    }
+                    &:hover {
+                        &:after {
+                            background-color: $color-link-default;
+                            content: '';
+                            display: block;
+                            height: 3px;
+                            width: 100%;
+                            transition: width .5s;
+                        }
+                    }
+                    &.active {
+                        font-weight: bold;
+                        &:after {
+                            background-color: $color-link-default;
+                            content: '';
+                            display: block;
+                            height: 3px;
+                            width: 100%;
+                        }
+                    }
+                    &.logo {
+                        &:hover {
+                            &:after {
+                                background-color: transparent;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .nav--mobile {
+        display: none;
+    }
+}
